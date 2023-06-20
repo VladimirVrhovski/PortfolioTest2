@@ -1,4 +1,4 @@
-import anime from "../portfolioTest3/anime.es.js";
+import anime from './anime.es.js';
 
 let wrapper = document.getElementById("tiles");
 
