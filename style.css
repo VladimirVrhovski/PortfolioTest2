@@ -389,3 +389,18 @@ input[type=checkbox]:checked ~ .toggle > .diagonal-2 {
         transform: translateY(-100%);
     }
 }
+
+/* scrollbar css */
+body::-webkit-scrollbar {
+    width: .75rem;
+    position: fixed;
+    z-index: 100;
+}
+body::-webkit-scrollbar-track {
+    background-color: var(--darker);
+}
+body::-webkit-scrollbar-thumb {
+    background-color: var(--lighter);
+    border: 1px solid var(--text);
+    border-radius: 1rem;
+}
