@@ -8,14 +8,26 @@ let columns = Math.floor(document.body.clientWidth / 50),
 let toggled = false;
 const tileOnLoad = (columns, rows) => {
     toggled = !toggled;
-    anime({
-        targets: ".tile",
-        opacity: toggled ? 0 : 1,
-        delay: anime.stagger(80, {
-            grid: [columns, rows],
-            from: Math.floor(columns*rows/2+columns/2)
+    if(rows%2==0) {
+        anime({
+            targets: ".tile",
+            opacity: toggled ? 0 : 1,
+            delay: anime.stagger(50, {
+                grid: [columns, rows],
+                from: Math.floor(columns*rows/2+columns/2)
+            })
         })
-    })
+    }
+    else {
+        anime({
+            targets: ".tile",
+            opacity: toggled ? 0 : 1,
+            delay: anime.stagger(50, {
+                grid: [columns, rows],
+                from: Math.floor(columns*rows/2)
+            })
+        })
+    }
 }
 const createTile = index => {
     let tile = document.createElement("div");
