@@ -218,7 +218,7 @@ section {
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 100;
+    z-index: 98;
     width: 20%;
     min-width: 240px;
     height: 100svh;
@@ -265,7 +265,7 @@ input[type="checkbox"]:checked ~ .menu {
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 98;
+    z-index: 99;
     transform: translateX(100%);
     transition-delay: 0ms;
     transition: 400ms;
