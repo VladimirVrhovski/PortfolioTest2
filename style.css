@@ -21,7 +21,7 @@ body {
 }
 #tiles {
     position: fixed;
-    z-index: 100;
+    z-index: 99;
     height: 100%;
     width: 100%;
     display: grid;
@@ -173,7 +173,7 @@ section {
 /* big menu css */
 .big-menu {
     position: fixed;
-    z-index: 99;
+    z-index: 98;
     top: 0;
     left: 0;
     width: 100%;
@@ -217,7 +217,7 @@ section {
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 97;
+    z-index: 100;
     width: 20%;
     min-width: 240px;
     height: 100svh;
